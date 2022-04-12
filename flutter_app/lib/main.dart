@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'screens/LoginPage.dart';
+import 'screens/HomePage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,8 +18,13 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark(),
-      home: LoginPage(),
+      theme: ThemeData.light(),
+      // home: LoginPage(),
+      initialRoute: LoginPage.id,
+      routes: {
+        LoginPage.id: (context) => LoginPage(),
+        HomePage.id: (context) => HomePage(),
+      },
     );
   }
 }
