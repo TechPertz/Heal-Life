@@ -43,11 +43,21 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
               ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, HomePage.id);
-                },
-                child: const Text("Submit"),
+              Row(
+                children: [
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, HomePage.id);
+                    },
+                    child: const Text("Login"),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, HomePage.id);
+                    },
+                    child: const Text("Sign In"),
+                  ),
+                ],
               ),
             ],
           ),

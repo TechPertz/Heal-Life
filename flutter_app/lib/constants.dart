@@ -29,3 +29,14 @@ const FOOD_DATA = [
   },
   {"name": "Wrap", "brand": "Subway", "price": 6.99, "image": "wrap.png"}
 ];
+
+const sports = [
+  "Cricket",
+  "Football",
+  "Tennis",
+  "Walking",
+  "Gymming",
+  "Running",
+  "Badminton",
+  "Kids Play"
+];
