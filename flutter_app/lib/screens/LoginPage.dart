@@ -44,18 +44,25 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ),
               Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.pushNamed(context, HomePage.id);
-                    },
-                    child: const Text("Login"),
+                  Padding(
+                    padding: EdgeInsets.all(15),
+                    child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.pushNamed(context, HomePage.id);
+                      },
+                      child: const Text("Login"),
+                    ),
                   ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.pushNamed(context, HomePage.id);
-                    },
-                    child: const Text("Sign In"),
+                  Padding(
+                    padding: EdgeInsets.all(15),
+                    child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.pushNamed(context, HomePage.id);
+                      },
+                      child: const Text("Sign Up"),
+                    ),
                   ),
                 ],
               ),
