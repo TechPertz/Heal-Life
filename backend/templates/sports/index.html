@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Nearby Parks</title>
+    </head>
+<body>
+    <h1>Nearby Parks</h1>
+    <ul>
+    {% for location in locations %}
+        <li>
+        {{ location.name }}: 
+        {% comment %} {{location.location}} {% endcomment %}
+        </li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
